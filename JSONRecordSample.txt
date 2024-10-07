@@ -1,0 +1,24 @@
+{
+        "id": 5,
+        "teacherName": "Aman Kumar",
+        "address": "Jayanagar",
+        "classesHandled": "Class1B,Class1D",
+        "mobileNo": "8837674353",
+        "basicPay": 10000,
+        "allowances": 250,
+        "email": "aman@gmail.com"
+}
+
+--------------
+{
+        "password": "123456",
+        "username": "user4",
+        "roles" :
+                [
+                   { 
+                    "id" : "1",
+                    "name": "ADMIN"
+                   }
+                ]
+               
+    }

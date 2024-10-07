@@ -1,0 +1,94 @@
+Day 01 & 02
+Security Project - SpringBOOT+CRUD+Thymeleaf+JPA+Security
+-----------------------------
+Test
+http://localhost:8080//SchoolMS/teachers/allTeacherDetails
+
+
+
+---------------------------------
+TeacherDetails Mgmt System
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   [ DAY 01/02]   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+As part of the School Mgmt System , TeacherDetailsMgmt Module is being created and you are part of the IT Dev Team
+developing this.
+A Web Application is to be created which accepts and Manages the TeacherDetails which include the following fields
+
+TeacherDetails
+Id 
+TeacherName
+Address
+eMail
+ClassesHandled
+MobNo
+BasicPay
+Allowances
+
+The system should allow one to Accept , Modify , Delete and View the above details
+Since this Data comprises few confidential data, it is planned to wrap security layer over this module.
+
+You are supposed to create a SpringBoot Application involving 
+JPA,Thymeleaf & MySQL as DBMS
+
+Dependencies to be added:
+Spring-Web, SpingData-JPA , Swagger(Optional) , Lombok , DevTools ,MySQL Connector(Driver), Thymeleaf & Spring SECURITY
+
+The security configurations to be done are as follows:
+ADMIN should be able to do all tasks: [Add TeacherDetails / Update Teacher Details / Delete TeacherDetails / Fetch All TeacherDetails & also By ID]
+USER should be able to do only [Add TeacherDetails & View TeacherDetails(all & by Id)]
+D1)
+Create Project - SpringBoot CRUD
+Repository Model  View Controller Service Project Structure for CRUD
+User & Role  - Model Configuration
+
+D2)
+UserDetails
+UserDetailServiceImpl + 
+Security Configuration - WebSecurityConfigurerAdapter
+
+Cross-origin resource sharing (CORS) is a mechanism for integrating applications. CORS defines a way for client web applications that are loaded in one domain to interact with resources in a different domain.
+
+Definition. Cross-Site Request Forgery (CSRF) is an attack that forces authenticated users to submit a request to a Web application against which they are currently authenticated. CSRF attacks exploit the trust a Web application has in an authenticated user.
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   [ DAY 03/04/05]   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Day 03 , 04 & 05
+
+Security Project - SpringBooot - Restful Service- CRUD + JPA + Security
+
+D3 SpringBootRestful Service + CRUD
+
+D4 SecurityWrap parta
+D5 SecurityWrap partb
+
+Since the Mgmt wants the TDMS to be created as a RESTFul Service, The Previous Project
+Have to be Migrated to RESTFul Service
+
+Day 03:
+
+Create RESTFul Service with CRUD operations 
+
+Test it with PostMan
+-----------------------------
+
+Day 04 / 05
+
+Add User / Role Entities
+With Controlller/Service Implementations to Add User/Role
+Security Configuration with
+a) UserDetails Implementation
+b) Security Configuration Implementation
+c) UserDetailsService Implementation
+
+Test It With POSTMAN
+
+
+
+
+
+
+
+
+
+
+=======================================================================
