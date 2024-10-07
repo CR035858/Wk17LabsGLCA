@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<title>Save/Update Teacher Details</title>
+	<style>
+		body 
+		{
+	        background: #CBDCF7;
+	        margin: 0;
+      	}
+      	.container 
+      	{
+			  margin-top: 20px;
+			  border-color: dodgerblue;
+			  border-style: solid ;
+			  border-width: 2px;
+			  border-radius: 15px;
+			  height :755px;
+			  width :800px
+		}
+      	
+	</style>
+</head>
+
+<body>
+
+<!-- 
+				<td th:text="${teacherDetail.teacherName}" />	
+				<td th:text="${teacherDetail.address}" />	
+				<td th:text="${teacherDetail.eMail}" />	
+				<td th:text="${teacherDetail.classesHandled}" />	
+				<td th:text="${teacherDetail.mobileNo}" />	
+				<td th:text="${teacherDetail.basicPay}" />	
+				<td th:text="${teacherDetail.allowances}" />	
+	
+-->
+	<div class="container" align="center">
+	
+		<h3>Teacher Detail Directory</h3>
+		<hr>
+		
+		<p class="h4 mb-4">Save/Update Teacher Details</p>
+	
+		<form action="#" th:action="@{/teachers/save}"
+						 th:object="${teacherDetails}" method="POST">
+	<!--	<form action="#" th:action="@{/teachers/save}"
+						 th:object="${teacherDetails}">		  -->
+			<!-- Add hidden form field to handle update -->
+			<input type="hidden" th:field="*{id}" />
+			
+			<label>Teacher Name</label>
+			<input type="text" th:field="*{teacherName}"
+					class="form-control mb-4 col-4" placeholder="Teacher Name">
+
+			<label>Address</label>
+			<input type="text" th:field="*{address}"
+					class="form-control mb-4 col-4" placeholder="Address">
+
+			<label>E-Mail</label>
+			<input type="text" th:field="*{eMail}"
+					class="form-control mb-4 col-4" placeholder="eMail">
+
+			<label>Classes Handled</label>		
+			<input type="text" th:field="*{classesHandled}"
+					class="form-control mb-4 col-4" placeholder="Classes Handled">
+
+			<label>Mobile No.</label>
+			<input type="text" th:field="*{mobileNo}"
+					class="form-control mb-4 col-4" placeholder="Mobile No">
+					
+			<label>Basic Pay</label>
+			<input type="text" th:field="*{basicPay}"
+					class="form-control mb-4 col-4" placeholder="Basic Pay">
+					
+			<label>Allowances</label>
+			<input type="text" th:field="*{allowances}"
+					class="form-control mb-4 col-4" placeholder="Allowances">
+				
+			<button type="submit" class="btn btn-info col-2">Save</button>
+						
+		</form>
+	
+		<hr>
+		<a th:href="@{/teachers/list}">Back to Teacher Details List</a>
+		
+	</div>
+</body>
+
+</html>
